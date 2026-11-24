@@ -1,0 +1,155 @@
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff1f5;
+    color: #634452;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 35px 15px;
+    position: relative;
+}
+
+/* Main container */
+body > div,
+body > main {
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+
+/* Cute floating hearts */
+body::before {
+    content: "♡  ♥  ♡";
+    position: fixed;
+    top: 25px;
+    right: 35px;
+    color: #e99ab4;
+    font-size: 22px;
+    letter-spacing: 12px;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+body::after {
+    content: "♥  ♡  ♥";
+    position: fixed;
+    bottom: 25px;
+    left: 30px;
+    color: #e99ab4;
+    font-size: 20px;
+    letter-spacing: 10px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    font-size: 27px;
+    color: #b65f80;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 17px;
+    color: #a85d79;
+    margin: 12px 0;
+}
+
+h3 {
+    font-size: 14px;
+}
+
+/* Form and sections */
+form,
+section {
+    background: white;
+    padding: 18px;
+    border-radius: 15px;
+    margin: 12px 0;
+    border: 1px solid #f5dce5;
+    box-shadow: 0 4px 15px #d994ad18;
+}
+
+/* Inputs */
+label {
+    display: block;
+    font-size: 12px;
+    color: #956b7b;
+    margin: 9px 0 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f0d5df;
+    border-radius: 8px;
+    background: #fff9fb;
+    color: #634452;
+    font-family: inherit;
+    font-size: 12px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #d986a5;
+}
+
+/* Buttons */
+button {
+    background: #d986a5;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #bd6f8c;
+}
+
+/* Expense summary */
+.summary-card,
+.expense-item {
+    background: #fff8fa;
+    padding: 12px;
+    border-radius: 9px;
+    margin: 8px 0;
+}
+
+strong {
+    color: #b65f80;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    h1 {
+        font-size: 23px;
+    }
+
+    body::before {
+        font-size: 15px;
+    }
+}

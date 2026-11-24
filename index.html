@@ -1,0 +1,68 @@
+
+
+<<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Student Traker</title>
+       
+    </head>
+    <body>
+        <header>
+             <h1>Student Tracker</h1>
+        </header>
+        <main>
+            <section>
+                <h2 id="add-expense-heading">Add New Expense</h2>
+                <form id="expense-form">
+            <div>
+                 <label for="expense-name">Expense Name</label>
+                <input type="text" id="expense-name" name="expenseName" placeholder="e.g., Notebook, Bus Fare" required>
+            </div>
+
+            <div>
+                <label for="expense-amount">Amount (₹)</label>
+                <input type="number" id="expense-amount" name="expenseAmount" min="0.01" step="0.01" placeholder="e.g., 150.00" required>
+                </div>
+
+             <div>
+             <label for="expense-category">Category</label>
+              <select id="expense-category" name="expenseCategory" required>
+                  <option value="" disabled selected>Select a category</option>
+                  <option value="Food">Food</option>
+                  <option value="Travel">Travel</option>
+                  <option value="Shopping">Shopping</option>
+                  <option value="Education">Education</option>
+                  <option value="Other">Other</option>
+             </select>
+             </div>
+             <div>
+            <button type="submit" id="add-expense-btn">Add Expense</button>
+             </div>
+        </form>
+        </section>
+    <section aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Expense Summary</h2>
+      <p>Total Expenses: <strong id="total-expenses">₹0.00</strong></p>
+    </section>
+    <section aria-labelledby="filter-heading">
+      <h2 id="filter-heading">Filter Expenses</h2>
+      <div>
+        <label for="filter-category">Category Filter</label>
+        <select id="filter-category" name="filterCategory">
+          <option value="All" selected>All</option>
+          <option value="Food">Food</option>
+          <option value="Travel">Travel</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Education">Education</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+    </section>
+          
+
+
+    </body>
+</html>
